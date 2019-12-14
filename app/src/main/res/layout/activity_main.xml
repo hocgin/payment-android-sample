@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.hocg.payment_app.MainActivity">
+    <CheckBox
+        android:id="@+id/changeModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:text="沙箱模式"/>
+    <EditText
+        android:id="@+id/payParamsInput"
+        android:layout_width="match_parent"
+        android:lines="5"
+        android:layout_below="@id/changeModel"
+        android:layout_height="wrap_content"
+        android:hint="请输入用来调起APP支付的参数"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:id="@+id/goPayBtn"
+        android:text="App支付"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payParamsInput"
+        android:layout_toStartOf="@+id/changeModel"/>
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_below="@+id/goPayBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:text="http://192.168.1.142:8080"
+        android:hint="请输入用来拦截Wap支付的页面地址"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:id="@+id/goBrowserBtn"
+        android:text="进入页面"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urlInput"
+        android:layout_centerHorizontal="true"/>
+
+  <Button
+    android:id="@+id/paste"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/payParamsInput"
+    android:layout_toEndOf="@+id/changeModel"
+    android:text="粘贴"/>
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="https://github.com/hocgin/payment-project"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="13dp"/>
+
+
+</RelativeLayout>
