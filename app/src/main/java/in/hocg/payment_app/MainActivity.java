@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
   }
   
   @Subscribe(threadMode = ThreadMode.POSTING)
-  protected void onMessageEvent(MessageEvent event) {
+  public void onMessageEvent(MessageEvent event) {
     Map<String, Object> result = (Map<String, Object>) event.getData();
     Object memo = result.get("memo");
     Object resultStatus = result.get("resultStatus");

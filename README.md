@@ -1,3 +1,6 @@
 ## 支付宝 - SDK Demo
 > https://github.com/hocgin/payment-project
-- 调试支付功能
+- 调试APP支付功能
+
+## 下载
+[下载 APK](./docs/app-release.apk)
